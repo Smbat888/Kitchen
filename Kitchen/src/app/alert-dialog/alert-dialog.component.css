@@ -1,0 +1,51 @@
+>>>.modal-dialog-success {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+    margin: auto;
+}
+
+.alert-dialog {
+    z-index: 1200;
+}
+
+.modal-title {
+    color: red;
+}
+
+.modal-footer {}
+
+.dialog-button {}
+
+.dialog-button button {
+    width: 49%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    >>>.modal-dialog-success {
+        width: 75%;
+    }
+    >>>.modal-footer {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: landscape) {
+    >>>.modal-footer {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    >>>.modal-footer {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    >>>.modal-footer {
+        text-align: center;
+    }
+}

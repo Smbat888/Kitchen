@@ -1,0 +1,24 @@
+<div class="form-container" id="toolbar">
+    <header [@fallIn]="state">
+        <button (click)="logout()" class="basic-btn">Դուրս Գալ</button>
+    </header>
+    <div>
+        <h2>Ողջույ՜ն {{ name.auth.displayName }}</h2>
+        <div id="page" [@moveInLeft]="state">
+
+            <!--<img src="assets/images/filler.png" />-->
+        </div>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal" (click)="onParticipateTodayButtonClick()">Participate today</button>
+        <button type="button" class="btn btn-info" (click)="onParticipateWeakButtonClick()">Participate weak</button>
+        <button type="button" class="btn btn-info" (click)="onParticipateMounthButtonClick()">Participate mount</button>
+        <button type="button" class="btn btn-info" (click)="onGetParticipantsCountForTodayButtonClick()">Get Participants count for today</button>
+        <button type="button" class="btn btn-info" (click)="onGetNotParticipantsForTodayButtonClick()">Get Not participants for today</button>
+        <button type="button" class="btn btn-info" (click)="sendDataToFirebase()">Send Notification</button>
+    </div>
+
+</div>
+
+<app-alert-dialog #modalId></app-alert-dialog>

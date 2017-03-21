@@ -1,0 +1,11 @@
+<modal #alertDialogId cssClass="modal-dialog-success" class="alert-dialog" (onClose)="onDialogDismiss()" (onDismiss)="onDialogDismiss()">
+    <modal-body>
+        {{dialogMessage}}
+    </modal-body>
+    <modal-footer>
+        <div class="dialog-button">
+            <button class="btn btn-primary col-md-6" (click)="onYesPressed() ">yes</button>
+            <button class="btn btn-primary col-md-6" (click)="hide() ">no</button>
+        </div>
+    </modal-footer>
+</modal>
